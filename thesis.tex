@@ -40,9 +40,9 @@
 \renewcommand*\chaptermarkformat{\chapappifchapterprefix{\ }% 
   \thechapter.\enskip}
 
-\RedeclareSectionCommand[tocindent=0pt]{section}
-\RedeclareSectionCommand[tocindent=0pt]{subsection}
-%\RedeclareSectionCommand[tocnumwidth=7pt]{chapter}
+\RedeclareSectionCommand[tocindent=10pt]{section}
+\RedeclareSectionCommand[tocindent=18pt]{subsection}
+%\RedeclareSectionCommand[tocnumwidth=0pt]{chapter}
 
 \usepackage{scrhack}
 
@@ -57,7 +57,7 @@
 \usepackage{makeidx}
 \usepackage{paralist,ifthen,todonotes}
 \usepackage{url}
-\usepackage[toc]{glossaries}
+\usepackage[toc, style=alttree]{glossaries}
 \usepackage{pdfpages}
 
 % table setup
@@ -129,6 +129,7 @@
 % load glossary entries
 \makenoidxglossaries
 \loadglsentries{glossary}
+\glssetwidest{Immersion} %Glossar spaltenbreite festlegen
 
 \begin{document}
 
@@ -149,11 +150,12 @@
 
 \mainmatter
 \include{content/1_Einleitung}
-\include{content/2_Grundlagen}
-\include{content/3_SEimMV}
-\include{content/4_AbwehrundSchutz}
+\include{content/2_Metaverse}
+\include{content/3_SocialEngineering}
+\include{content/4_SEimMV}
+\include{content/5_AbwehrundSchutz}
 %\include{content/Zusammenfassung}
-\include{content/5_FazitundAusblick}
+\include{content/6_FazitundAusblick}
 
 
 % remove if not needed
@@ -161,11 +163,9 @@
 %\include{content/a1_supplemental}
 
 \backmatter
-\listoffigures
-\cleardoublepage
-
-\listoftables
-\cleardoublepage
+%Tabellenverzeichnis
+%\listoftables
+%\cleardoublepage
 
 %\renewcommand{\lstlistlistingname}{List of Listings}  % change for German thesis
 %\lstlistoflistings
@@ -173,6 +173,9 @@
 
 \bibliographystyle{wmaainf}
 \bibliography{refs}
+
+\listoffigures
+\cleardoublepage
 
 \printnoidxglossaries
 
