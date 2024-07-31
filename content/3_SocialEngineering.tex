@@ -25,6 +25,7 @@ Social Engineering wird von verschiedenen Akteuren, darunter Einzelpersonen und 
 
 Methoden des Social Engineering finden ebenfalls Anwendung im Vertrieb, wo Verkäufer Kunden Produkte aufdrängen, die diese möglicherweise gar nicht benötigen. Ähnliche Techniken werden auch von Personalrekrutierern, Regierungen und Spionen genutzt, jeweils angepasst an ihre spezifischen Ziele und Kontexte. (Vgl. \cite{werSE})
 Auch verärgerte Angestellte können Methoden des Social Engineering nutzen um dem eigenen Unternehmen zu schaden. (Vgl. \cite{Hadn2})
+Ebenso wie unterschiedliche Akteure die Social Engineering betreiben sind auch die Motivationen für einen Angriff unterschiedlich. Die einen tun es aus Spaß, für das Machtgefüh oder Rache während es für andere um Politik, Spionage oder Industriespionage geht. (vgl. \cite{Motivation})
 
 \section{Geschichte des Social Engineering}
 
@@ -65,72 +66,30 @@ Social Engineering in seiner schädlichen Ausprägung lässt sich typischerweise
 
 \subsection{Phishing}
 
-Phishing scams might be the most common types of social engineering attacks used
-today. Most phishing scams tend to have the following characteristics (Bisson, 2015):
-• They seek to obtain personally identifiable information (PII), such as names, addresses
-and social security numbers.
-• They tend to use shortened URLs or embed links that redirect users to sites that appear
-legitimate.
-• They usually attempt to instill a sense of urgency in the user by using some sort of fear
-tactic or a threat in an attempt to get the user to act immediately.
-Some phishing emails are more poorly crafted than others to the extent that their
-messages oftentimes exhibit spelling and grammar errors but these emails are no less focused
-on directing victims to a fake website or form where they can steal user login credentials and
-other personal information (Workman, 2008).
-A recent scam sent phishing emails to users after they installed cracked APK files from
-Google Play Books that were pre-loaded with malware. This specific phishing campaign
-demonstrates how attackers commonly pair malware with phishing attacks in an effort to steal
-users’ information (Whitwam, 2015).
-
-Die Form des „Phishing“ oder eben des Angelns nach Informationen ist die wohl am weitesten
-verbreitete, vor allem durch den Versand von Massen-E-Mails oder durch zielgerichtete
-E-Mails. In diesen E-Mails sind schädliche Dateien, Links oder Instruktionen für
-den Adressaten enthalten. Die Konsequenzen durch eine Öffnung dieser Mails sind vielschichtig
-und oft äußerst bedrohlich.
-Ebenfalls unter die Kategorie des „Phishing“ fallen die zielgerichteten Angriffe auf
-(hochrangige) Exponenten von Unternehmen. Wenn es sich um persönlich formulierte
-E-Mails, die bereits Detailinformationen über den Adressaten beinhalten handelt, sprechen
-wir von „Spear-Phishing“ – abgeleitet vom Speer, welcher sich fokussiert auf ein
-Subjekt richtet.
-
-In der Umgangssprache bekannt und in letzter Zeit eine immer häufiger angewendete
-Form des Phishing ist der CEO-Fraud oder eben das „Whaling“ – abgeleitet vom Wal.
-Dies umschreibt das Spear-Phishing auf ein hochrangiges Individuum. Die Schäden aus
-diesen Whaling-Methoden sind enorm, und die Anzahl dieser Angriffe, auch „Business
-E-mail Compromise (BEC)“ genannt, steigt rasant (Federal Bureau of Investigations 2016).
-Das Internet Complaint Center des FBI hat im Jahr 2016 bereits über 22.000 Unternehmen
-und Organisationen als Opfer dieser Betrugsform identifiziert. Die Dunkelziffer ist
-auch bei diesen Taten hoch, und man kann davon ausgehen, dass nur ein geringer Prozentsatz
-an Betroffenen an die Öffentlichkeit gelangt.
-Die fünf häufigsten Betrugsmuster gemäß dieser Studie des FBI aus dem Jahr 2016
-seien die folgenden (Federal Bureau of Investigations 2016):
-1. Drittparteien: Unternehmen werden mit gefälschten angeblichen Lieferantenangaben
-angeschrieben, Rechnungen an das vermeintliche Konto des Lieferanten – das auf die
-Täter lautet – zu bezahlen. In der Praxis lässt sich dieses Muster häufig beobachten.
-2. CEO-Fraud: Anhand kompromittierter E-Mail-Accounts auf Stufe C-Level wie CEO,
-CFO, CTO, CSO, CIO (Geschäftsleitung/Vorstand) werden Mitarbeiter aufgefordert,
-Geld an ein bestimmtes Konto zu überweisen oder überweisen zu lassen. Die
-E-Mail-Konten können dabei gefälscht oder tatsächlich gehackt und übernommen worden
-sein. Die hier angewandte Methode ist auch unter den Namen „Business Executive
-Scam“ oder „Financial Industry Wire Frauds“ bekannt.
-3. Datendiebstahl auf Basis CEO-Fraud: Gefälschte E-Mails auf Stufe C-Level werden
-genutzt, um sensible Daten abzugreifen. Es kann sich dabei um Daten aus der Personalabteilung,
-der Buchhaltung, des Controlling oder des Geschäftsleitungssekretariats
-handeln.
-4. Weitere betrügerische Kommunikation: Die persönlichen E-Mail-Accounts von Mitarbeitern
-werden gehackt und zur Kommunikation mit Dritten (Geschäftspartnern,
-Kunden, Lieferanten etc.) genutzt. Auch hier wird wieder um Zahlung von Beträgen an
-die Konten der Täter gebeten.
+Phishing, ein Begriff, der sich aus den Worten "Passwort" und "Fishing" zusammensetzt, ist die am häufigsten auftretende Form des Social Engineering wie Abbildung \ref{fig:CrimeVergleich} zeigt.(vgl. \cite{bsi1})
 
 \begin{figure}[h]
     \centering
-\includegraphics[width = 5cm]{figures/ChristopherHadn_2014_Kapitel2WasIstSocialE_SocialEngineeringEntt.jpg}
+\includegraphics[width = 12cm]{figures/FBICrimeVergleich.png}
+\caption{Die fünf häufigsten Kriminalitätsarten im Vergleich zu den letzten fünf Jahren}
+\cite{fbi}
+\label{fig:CrimeVergleich}
+\end{figure}
+
+Phishing gehört zum technischen Social Engineering. Bei dieser Methode senden Angreifer massenhaft E-Mails, die gezielt Emotionen wie Angst und Neugier oder das Konzept der Autorität ausnutzen. Diese E-Mails enthalten schädliche Dateien, Links oder Anweisungen. Das Anklicken, Öffnen oder Befolgen dieser Inhalte kann zu Datenverlust, Sicherheitsverletzungen oder anderen nachteiligen Konsequenzen für die Zielperson führen(Vgl. \cite{phishing}) Abbildung \ref{fig:PhishingPayPal} zeigt eine solche E-mail.
+
+
+\begin{figure}[h]
+    \centering
+\includegraphics[width = 10cm]{figures/ChristopherHadn_2014_Kapitel2WasIstSocialE_SocialEngineeringEntt.jpg}
 \caption{gefälschte E-Mail von PayPal}
 \cite{GrundformenDesSE}
 \label{fig:PhishingPayPal}
 \end{figure}
 
-
+Die Befürchtung, dass das eigene Konto kompromittiert und Geld gestohlen wurde, kann ausreichen, um einen Menschen dazu zu bewegen, auf einen Link zu klicken und sich schnell ins Konto einzuloggen, um die Situation zu überprüfen. Genau diese Reaktion intendiert der Angreifer. Häufig werden die Zugangsdaten dann von einer gefälschten Webseite oder durch einen manipulierten Login-Prozess mittels kleiner Skripte abgefangen. Sobald der Angreifer diese Daten in seinem Besitz hat, nutzt er sie, um sich einzuloggen und genau jene Handlung auszuführen, vor der das Opfer Angst hatte: das Geld wird gestohlen. (Vgl. \cite{phishing}) Da es sich hierbei um Massen-E-Mails handelt ist die Anrede immer unpersönlich. \\
+Wenn solche Angriffe durch persönlich angepasste E-Mails ausgeführt werden, die bereits detaillierte Informationen, wie Vorlieben oder Abneigungen, des Empfängers enthalten, bezeichnet man dies als >>Spear-Phishing<<. Dieser Begriff leitet sich vom Speer ab, der als Symbol für die gezielte Ausrichtung auf ein spezifisches Ziel steht. (Vgl. \cite{spear},\cite{phishing})\\
+Eine Spezialform des Spear-Phishing ist das >>Whaling<<, auch bekannt als >>CEO-Fraud<< oder >>BEC<<. Whaling leitet sich von Wal ab und umschreibt das Spear-Phishing auf ein hochrangiges Individuum. >>Allein im Jahr 2023 erhielt das IC3 des FBI 21.489 BEC-Beschwerden, wobei die angepassten Verluste über 2,9 Milliarden Dollar betrugen.<<\cite[frei übersetzt]{fbi}
 
 
 \subsection{Elizitieren per Telefon}
