@@ -1,5 +1,7 @@
 \chapter{Social Engineering}\label{ch:SocialEngineering}
 
+
+
 \section{Was ist Social Engineering?}
 
 Auch zum Thema Social Engineering lassen sich mehrere Definitionen finden, die in vielen Punkten übereinstimmen aber sich auch in wesentlichen Punkten unterscheiden. 
@@ -81,7 +83,7 @@ Phishing gehört zum technischen Social Engineering. Bei dieser Methode senden A
 
 \begin{figure}[h]
     \centering
-\includegraphics[width = 10cm]{figures/ChristopherHadn_2014_Kapitel2WasIstSocialE_SocialEngineeringEntt.jpg}
+\includegraphics[width = 7cm]{figures/ChristopherHadn_2014_Kapitel2WasIstSocialE_SocialEngineeringEntt.jpg}
 \caption{gefälschte E-Mail von PayPal}
 \cite{GrundformenDesSE}
 \label{fig:PhishingPayPal}
@@ -89,34 +91,111 @@ Phishing gehört zum technischen Social Engineering. Bei dieser Methode senden A
 
 Die Befürchtung, dass das eigene Konto kompromittiert und Geld gestohlen wurde, kann ausreichen, um einen Menschen dazu zu bewegen, auf einen Link zu klicken und sich schnell ins Konto einzuloggen, um die Situation zu überprüfen. Genau diese Reaktion intendiert der Angreifer. Häufig werden die Zugangsdaten dann von einer gefälschten Webseite oder durch einen manipulierten Login-Prozess mittels kleiner Skripte abgefangen. Sobald der Angreifer diese Daten in seinem Besitz hat, nutzt er sie, um sich einzuloggen und genau jene Handlung auszuführen, vor der das Opfer Angst hatte: das Geld wird gestohlen. (Vgl. \cite{phishing}) Da es sich hierbei um Massen-E-Mails handelt ist die Anrede immer unpersönlich. \\
 Wenn solche Angriffe durch persönlich angepasste E-Mails ausgeführt werden, die bereits detaillierte Informationen, wie Vorlieben oder Abneigungen, des Empfängers enthalten, bezeichnet man dies als >>Spear-Phishing<<. Dieser Begriff leitet sich vom Speer ab, der als Symbol für die gezielte Ausrichtung auf ein spezifisches Ziel steht. (Vgl. \cite{spear},\cite{phishing})\\
-Eine Spezialform des Spear-Phishing ist das >>Whaling<<, auch bekannt als >>CEO-Fraud<< oder >>BEC<<. Whaling leitet sich von Wal ab und umschreibt das Spear-Phishing auf ein hochrangiges Individuum. >>Allein im Jahr 2023 erhielt das IC3 des FBI 21.489 BEC-Beschwerden, wobei die angepassten Verluste über 2,9 Milliarden Dollar betrugen.<<\cite[frei übersetzt]{fbi}
+Eine Spezialform des Spear-Phishing ist das >>Whaling<<, auch bekannt als >>CEO-Fraud<< oder >>Business E-Mail Compromise (BEC)<<. Whaling leitet sich von Wal ab und umschreibt das Spear-Phishing auf ein hochrangiges Individuum, wie z.B. den CEO einer Firma. >>Allein im Jahr 2023 erhielt das IC3 des FBI 21.489 BEC-Beschwerden, wobei die angepassten Verluste über 2,9 Milliarden Dollar betrugen.<<\cite[frei übersetzt]{fbi}
 
 
 \subsection{Elizitieren per Telefon}
+
+Das \glqq Elizitieren\grqq{} am Telefon ist die zweithäufigste Methode des Social Engineering.\cite{eliAmTel} \glqq In Schulungsunterlagen definiert die National Security Agency der USA Elizitieren als \glq subtile Extraktion von Informationen während einer offenbar normalen und harmlosen Unterhaltung\grq\grqq{}.\cite{elizitieren}
+
+Beim Elizitieren per Telefon kontaktiert der Angreifer die Zielperson telefonisch und stellt unauffällige Fragen, um relevante aber bedeutungslos wirkende Informationen zu sammeln. Diese Informationen nutzt er häufig, um bei der nächsten Zielperson vertrauenswürdig zu erscheinen und so Zugang zu sensibleren Daten zu erhalten.
+
+Typischerweise verwendet der Angreifer einen \glqq Pretext\grqq{}, indem er vorgibt, eine Person mit berechtigtem Interesse an den Informationen zu sein. (Vgl. \cite{eliz}) \glqq Mit Pretexting bezeichnet man die Schaffung eines erfundenen Szenarios, um die Zielperson als Opfer dazu zu überreden, Informationen herauszurücken oder eine Aktion auszuführen.\grqq{} \cite{pretext} Dies wird durch \glqq Spoofing\grqq{}unterstützt, wobei der Zielperson eine falsche Telefonnummer angezeigt wird, um den Eindruck zu erwecken, der Anruf stamme von einer vertrauenswürdigen Quelle(Vgl. \cite{spoofing})
+
+Die Effektivität des Elizitierens beruht auf der psychologischen Manipulation der Zielperson. Durch geschicktes Fragen und das Erzeugen eines Gefühls von Vertraulichkeit und Dringlichkeit gelingt es dem Angreifer, die Zielperson dazu zu bringen, Informationen preiszugeben, die sie unter normalen Umständen nicht teilen würde. Dies wird oft durch nonverbale Kommunikation wie Lächeln, Tonfall oder Sprechgeschwindigkeit unterstützt. Diese Technik erfordert sowohl Geduld als auch ein gutes Verständnis menschlicher Verhaltensweisen, um erfolgreich zu sein. (Vgl. \cite{elizitieren1})
+
+Auch die Polizei warnt vermehrt vor Betrügern, die sich am Telefon als Polizisten ausgeben und mit gefälschter Telefonnummer warnen das ein Einbruch ins Anwesen des Opfers bevorsteht. Sie fordern das Opfer auf Barvermögen und Wertgegenstände zur Sicherheitsverwahrung an falsche Kollegen zu übergeben. Außerdem soll das Opfer mit niemanden darüber sprechen um angebliche Ermittlungen nicht zu gefährden. Siehe Abbildung \ref{fig:Polizei} (Vgl. \cite{polizeibeamte})   
+
+\begin{figure}[h]
+    \centering
+\includegraphics[width = 5cm]{figures/LKA-Dokument-Poster-Falsche-Polizei NEU.pdf}
+\caption{Poster der Polizei Nordrhein-Westfalen}
+\cite{polizeibeamte}
+\label{fig:Polizei}
+\end{figure}
+
 \subsection{Identitätsbetrug}
 
+Beim Identitätsbetrug übernehmen die Angreifer eine fremde Identität, um die Zielperson zu unvorteilhaften Handlungen zu bewegen. Auch hier spielen Elizitieren und Pretexting eine wichtige Rolle. Im Gegensatz zu Phishing und telefonischem Elizitieren ist Identitätsbetrug eine physische Methode des Social Engineering. Daher kommt der nonverbalen Kommunikation eine besondere Bedeutung zu. Abhängig vom gewählten Pretext des Angreifers ist es entscheidend, die nonverbalen Signale der Zielperson richtig zu interpretieren und gleichzeitig selbst die passenden nonverbalen Zeichen auszusenden. (Vgl. \cite{Identitätsbetrug})
 
+Eine Beliebte Methode des Identitätsbetrugs ist \glqq Tailgating\grqq{}. Hierbei folgt der Angreifer befugten Personen in einen Bereich zu dem er sonst keinen Zutritt hätte indem er sich als jemand ausgibt, der berechtigt ist einzutreten. Indem er sich beispielsweise als Mitarbeiter ausgibt und im schwächer gesicherten Raucherberich aufhält um mit den Mitarbeitern anschließend das Gebäude zu betreten. Oft reicht es auch einen großen Karton zu tragen während man auf eine gesicherte Tür zuläuft, um von einem hilfsbereiten Mitarbeiter die Tür aufgehalten zu bekommen. Ein weiterer beliebter Trick ist es eine Kennkarte optisch zu kopieren. Nach mehreren Fehlversuchen besteht eine hohe Chance eingelassen zu werden. Diese Taktiken funktionieren besser, wenn sich der Angreifer gut vorbereitet hat und Verhaltensweisen, Körpersprache, Dialekte und Kleidungsstil der Angestellten erforscht und eingeübt hat. Auch hier hilft es im Vorfeld zu Elizitieren um an die notwendigen Informationen zu kommen. (Vgl. \cite{Identitätsbetrug})
+
+Bei einem Identitätsbetrug wie in dem Fall der falschen Polizisten, benutzen die Angreifer falsche Uniformen um sich als Polizisten auszugeben. Hier müssen die Täter versuchen sowohl Vertrauen als auch Autorität auszustrahlen um die Opfer nicht misstrauisch zu machen. 
+
+%Hauptmann von Köpenick
 \section{weitere Angriffsvektoren}
 
 \subsection{Dumpster diving}
 \subsection{Watering Hole}
 \subsection{Ködern}
 \subsection{Honigtopf}
-\subsection{Tailgating/Piggybacking}
+\subsection{USB Drop}
+
 
 
 \section{Psychologische Prinzipien hinter Social Engineering}
 
-\subsection{Mittel der Manipulation}
+% Framing
+% Rapport
+% Microexpressionen
+% Manipulation
 
-\subsection{Mittel der Beeinflussung}
+\subsection{6 Prinzipien der Beeinflussung}
+Es gibt viele unterschiedliche Taktiken die Social Engineere nutzen um ihre Zielperson zu überzeugen. Die meisten davon haben ihren Kern in einem von sechs grundlegenden psychologischen Prinzipien (vgl. \cite{PsychDesÜberzeugens}). Diese Prinzipien werden im folgenden kurz vorgestellt und erklärt wie ein Angreifer diese nutzt um seine Zielperson zu beeinflussen.  
 
-\subsubsection{stereotypes Verhalten}
 \subsubsection{Reziprozität}
+
+\glqq Nach Erkenntnissen von Soziologen und Anthropologen ist eine der verbreitetsten und grundlegensten Normen der menschlichen Kultur die Reziprotzitätsregel. Diese Regel besagt, dass Menschen versuchen sollen sich für das zu revanchieren, was sie von anderen bekommen.\grqq{} \cite{PsychDesÜberzeugensRezi} Diese Regel wurde Menschen bereits in Kindestagen beigebracht, zumeist mit der Redewendung \glqq Eine Hand wäscht die andere\grqq{}. Die Regel hat für eine Gesellschaft enorme Vorteile, indem sie den Ausbau des Handels, der Verteidigung und der gegenseitigen Hilfeleistung ermöglicht (vgl. \cite{rezi}). 
+
+Ein Angreifer kann die Regel auszunutzen, indem er durch kleine Gefälligkeiten, Geschenke oder Zugeständnisse die Zielperson dazu bringen kann, zu tun was den Wünschen des Angreifers entspricht um nicht in dessen Schuld zu stehen (vgl. \cite{rezi}).
+
+
 \subsubsection{Verpflichtung und Konsistenz}
+
+Die meisten Menschen wollen konsequent erscheinen. Sie wollen in ihren Worten Überzeugungen und Taten konsistent sein da die Gesellschaft der Konsistenz einen hohen Wert beimisst und sie sich im Alltag gut bewährt. Eine Orientierung am Konsistenzprinzip hilft schnelle Entscheidungen zu treffen, ohne alle relevanten Informationen prüfen zu müssen, indem man im Einklang mit früheren Entscheidungen und festgelegten Standpunkten handelt.    
+
+Der Angreifer versucht die Zielperson dazu zu bringen einen bestimmten Standpunkt zu beziehen. Die Zielperson spührt eine Verpflichtung konsequent zu sein und bei diesem Standpunkt zu bleiben. Wenn der Angreifer nun bittet Handlungen auszuführen die mit diesem Standpunkt im Einklang stehen, ist die Zielperson eher geneigt diesen Bitten oder Aufforderungen nachzugehen. Wenn Menschen sich öffentlich und aktiv auf einen Standpunkt festgelegt haben, dies mit Mühen verbunden war und durch innere Überzeugung geschah, ist die Verpflichtung noch größer (vgl.\cite{PsychDesÜberzeugensCom}). \glqq Die Konsistenz ist so stark, das Menschen gegen ihre eigenen Interessen verstossen, nur um nach außen hin als Konsistent zu gelten.\grqq{} \cite{ComundKon}
+
 \subsubsection{Soziale Bewährtheit}
+
+Das Prinzip der sozialen Bewährtheit besagt das Menschen dazu neigen ihre Entscheidungen wie sie handeln und was sie glauben danch auszurichten was andere Menschen in dieser Situation glauben oder machen. Das Verhalten der anderen Personen wird in diesem Moment als richtig angenommen. Wenn Personen unsicher sind, da eine mehrdeutige Situation vorliegt wird dieses Verhalten noch verstärkt. Auch die Festellung einer Ähnlichkeit zu anderen Personen verstärkt dieses Verhalten.
+
+Ein Angreifer kan dieses Prinzip benutzen um die Zielperson zu einer Handlung zu ermutigen indem er sie in eine unsichere Situation bringt und darauf hinweist dass schon viele andere Personen genauso gehandelt haben. (vgl. \cite{PsychDesÜberzeugensSozBew})
+
+
 \subsubsection{Sympathie}
-\subsubsection{Authorität}
+
+\glqq Menschen sind eher bereit, sich von jemandem überzeugen zu lassen, den sie kennen und sympatisch finden.\grqq{} \cite{PsychDesÜberzeugensSym}
+Der Mensch tendiert dazu, diejenigen zu mögen, die ihn mögen. \cite{sym}
+
+Ebenso wie bei dem Prinzip der sozialen Bewährtheit, ist auch hier Ähnlichkeit ein Faktor der Einfluss darauf hat ob jemand eine andere Person sympatisch findet. Dabei ist es unabhängig davon ob sich dies in ähnlichen Meinungen Charaktereigenschaften oder Lebensweisen äußert. (vgl. \cite{sym1})
+Ein weiterer Faktor bei der Entwicklung von Sympathie ist die körperliche Attraktivität. Einer Forschung zufolge werden Attraktiven Menschen unterbewusst automatisch positive Eigenschaften zugeschrieben (vgl. \cite{sym2}). Dies führt dazu, dass sie andere Personen leichter beeinflussen können. 
+Wiederholte Kontakte unter positven Rahmenbedingungen mit einer Person, bestenfalls eine erfolgreiche Kooperation, sind ebenfalls gute Möglichkeiten um Sympathie zu erzeugen. (vgl. \cite{PsychDesÜberzeugensSymp})
+
+Der Angreifer studiert seine Zielperson um sich ein möglichst genaues Bild von ihr zu machen. Sie passen ihren Kleidungsstiel an den der Zielperson an und achten darauf ein gepflegtes äuseres Erscheinungsbild abzugeben. Durch die Vortäuschung gleicher Interessen und gut plazierter Komplimente versuchen sie Sympathie zu erzeugen und so die Zielperson anfällig für ihre Wünsche und Forderungen zu machen. (vgl. \cite{PsychDesÜberzeugensSymp})
+
+
+\subsubsection{Autorität}
+
+Gehorsam gegenüber Autoritäten ist ein Prinzip das die Menschen schon seit Kindheitstagen prägt. Bereits Eltern bringen ihren Kindern bei das Gehorsam gegenüber den richtigen Autoritäten gut und Ungehorsam schlecht ist. Sie sollen ihren Eltern, Lehrern oder anderen Autoritäten gehorchen und sie nicht in Frage stellen da dies als respektlos gilt. Im Erwachsenenalter wird verlangt sich rechtlichen, militärischen und politischen Systemen unterzuordnen. Auch in der Bibel wird beschrieben, \glqq wie Ungehorsam gegenüber der höchsten Autorität dazu führte, dass Adam, Eva und der Rest der Menschheit des Paradieses verlustig gingen.\grqq{} \cite{PsychDesÜberzeugensBibel} 
+In vielen Fällen ist es richtig auf die Anweisungen von Autoritäten zu befolgen da diese über Wissen Erfahrung und Macht verfügen. 
+Oft reicht es auch schon den Anschein von Autorität zu erzeugen um automatischen Gehorsam zu erzeugen. Hierfür reichen oft schon die Insignien der Autorität, wie der richtige Titel, die passende Kleidung und Luxusartikel, wie Schmuk oder teure Fahrzeuge. (Vgl. \cite{PsychDesÜberzeugensAuto}) 
+
+Der Angreifer benutzt die Insignien der Autorität, wie z.B. eine Uniform, Visitenkarte oder ein Luxusauto um der Zielperson zu suggerieren das er über Macht verfügt und Zielperson seinem Willen entsprechend handeln sollte. Hierbei ist auch die richtige Körpersprache, Stimme und Artikulation wichtig damit die Zielperson nicht misstrauisch wird und die Autorität hinterfragt. (Vgl. \cite{Auto})
+
+
 \subsubsection{Knappheit}
 
+Das Knappheitsprinzip besagt, \glqq dass Möglichkeiten uns umso wertvoller erscheinen, je weniger erreichbar sie sind\grqq{}\cite{PsychDesÜberzeugensKnapp1}. Das Verlangen einer Person kann durch zeitliche oder mengenmäßige Begrenzungen sowie durch Konkurrenzdruck gesteigert werden. \cite{PsychDesÜberzeugensKnapp}
+
+Der Gedanke etwas zu verlieren motiviert die Menschen dabei stärker als der Gedanke etwas Gleichwertiges gewinnen zu können (vgl. \cite{Knapp}). Insbesondere in Situationen, die von Risiko und Unsicherheit geprägt sind, beeinflusst die Gefahr eines möglichen Verlustes die Entscheidungsprozesse erheblich (vgl. \cite{Knapp1},\cite{Knapp2}).
+
+Wenn Wahlfreiheit beschnitten oder bedroht wird, steigt das Verlangen, diese Freiheiten sowie die damit verbundenen Produkte und Dienstleistungen zu behalten, erheblich an. Dies löst eine Gegenreaktion aus, die das Interesse an der Sache und die Bemühungen, sie zu erlangen, intensiviert. Dieser Effekt wird als \glqq Reaktanz\grqq{} bezeichnet. (Vgl. \cite{Knapp3}) 
+Besonders augeprägt ist diese Reaktanz in der Trotzphase bei Kleinkindern und in der Pupertät bei Jugendlichen, da diese Lebensabschnitte durch ein aufkommendes Individualitätsgefühl gekennzeichnet sind. (Vgl. \cite{PsychDesÜberzeugensKnapp}) 
+
+Das Knappheitsprinzip bezieht sich auch auf Informationen. Verschiedene Forschungsarbeiten haben gezeigt, dass Informationen die schwerer zu erhalten sind eine größere Überzeugskraft besitzen (vgl. \cite{ForschKnapp}, \cite{Knapp4}, \cite{ForschKnapp1}). Unterliegt die Infomation einer Zensur überzeugte sie sogar ohne dass die Information tatsächlich vorlag (vgl. \cite{Knapp4}). 
+
+Beim Phishing wird häufig das Knappheitsprinzip eingesetzt. In den E-Mails wird von zeitlich begrenzten Angeboten oder Fristen gesprochen, nach deren Ablauf etwas Schlimmes passieren oder verloren gehen könnte. Ebenso werden exklusive Angebote, die auf geheimen Informationen basieren, verwendet, um die Opfer dazu zu verleiten, den Anweisungen zu folgen.
+
+Angreifer können das Knappheitsprinzip auch nutzen um das Reziprotzitätprinzip zu verstärken.Indem sie Information teilen von den sie behaupten dass sie schwer zu bekommen waren, steigt der Wert dieser Gabe für die Zielperson die sich nun revanchieren möchte.
 %\section{Beispiel eines erfolgreichen Social Engineering Angriffs}
